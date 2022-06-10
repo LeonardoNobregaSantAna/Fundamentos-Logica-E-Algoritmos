@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="leoli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-08 10:15:36 "/>
+        <attribute name="created" value="bGVvbGk7UEM7MjAyMi0wNC0wODsiMDk6MDI6NDMgIjsxODcx"/>
+        <attribute name="edited" value="bGVvbGk7UEM7MjAyMi0wNC0wODsiMTA6MTU6MzYgIjsyOzE5Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, soma" type="Real" array="False" size=""/>
+            <output expression="&quot;Ol&#225; querido usu&#225;rio. Vamos fazer a m&#233;dia das notas dos seus queridos alunos? Partiu!&quot;" newline="True"/>
+            <output expression="&quot;Insira a nota do primeiro bimestre:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Obrigado. Agora insira a nota do segundo bimestre:&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;&#201; isso a&#237;! Agora a nota do terceiro bimestre:&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Ufa, s&#243; mais uma. Insira a nota final do quarto bimestre:&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="soma" expression="(nota1+nota2+nota3+nota4)"/>
+            <assign variable="media" expression="soma/4"/>
+            <output expression="&quot;Voc&#234;, caro usu&#225;rio, est&#225; de parab&#233;ns. Mas, e seu aluno est&#225; de parab&#233;ns tamb&#233;m? Vejamos...&quot;" newline="True"/>
+            <output expression="&quot;A soma das notas de seu aluno &#233;: &quot;" newline="False"/>
+            <output expression="soma" newline="True"/>
+            <output expression="&quot;E a m&#233;dia dele ficou em &quot;" newline="False"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, seu aluno foi aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente seu aluno reprovou.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

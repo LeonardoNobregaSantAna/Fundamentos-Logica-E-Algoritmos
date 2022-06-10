@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="leoli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-08 10:44:47 "/>
+        <attribute name="created" value="bGVvbGk7UEM7MjAyMi0wNC0wODsiMTA6MTU6MzcgIjsxODcw"/>
+        <attribute name="edited" value="bGVvbGk7UEM7MjAyMi0wNC0wODsiMTA6NDQ6NDcgIjsxOzE5ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, soma" type="Real" array="False" size=""/>
+            <declare name="vendedor" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225; querido usu&#225;rio. Tudo bem? Chegou a hora de ver se o seu vendedor vai ganhar AQUELE b&#244;nus de comiss&#227;o. Ser&#225; que conseguiu? Vejamos.&quot;" newline="True"/>
+            <output expression="&quot;Diga o nome do vendedor:&quot;" newline="True"/>
+            <input variable="vendedor"/>
+            <output expression="&quot;Qual foi o valor total das vendas em &quot;" newline="False"/>
+            <output expression="&quot;Janeiro:&quot;" newline="True"/>
+            <input variable="jan"/>
+            <output expression="&quot;Fevereiro:&quot;" newline="True"/>
+            <input variable="fev"/>
+            <output expression="&quot;Mar&#231;o:&quot;" newline="True"/>
+            <input variable="mar"/>
+            <output expression="&quot;Abril:&quot;" newline="True"/>
+            <input variable="abr"/>
+            <assign variable="soma" expression="jan+fev+mar+abr"/>
+            <if expression="soma&gt;=5000">
+                <then>
+                    <output expression="&quot;O total das vendas do(a) &quot;" newline="False"/>
+                    <output expression="vendedor" newline="False"/>
+                    <output expression="&quot;&#233; de: &quot;" newline="False"/>
+                    <output expression="soma" newline="True"/>
+                    <output expression="&quot;Parab&#233;ns! O seu vendedor atingiu a meta dos R$5000,00. Ele receber&#225; 10% de b&#244;nus de comiss&#227;o. Continue incentivando seu vendedor para que mantenha o bom desempenho no pr&#243;ximo balan&#231;o.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O total das vendas do(a) &quot;" newline="False"/>
+                    <output expression="vendedor" newline="False"/>
+                    <output expression="&quot;&#233; de: &quot;" newline="False"/>
+                    <output expression="soma" newline="True"/>
+                    <output expression="&quot;Assim, o b&#244;nus de comiss&#227;o ser&#225; de 3%. Continue incentivando seu vendedor para que ele atinja a meta dos R$5000,00 no pr&#243;ximo balan&#231;o.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
